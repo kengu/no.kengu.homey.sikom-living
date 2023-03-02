@@ -1,12 +1,9 @@
-# Contributing to Athom and Homey
+# Contributing
 
 First off all, thank you for taking the time to contribute!
 
-The following is a set of guidelines for contributing to Athom and its packages, which are hosted in the [Athom Organization](https://github.com/athombv) on GitHub. These are just guidelines, not rules. Use your best judgment, and feel free to contact us if you have any questions.
-
-Please join our [community slack](https://slack.athom.com), if you have not done so already.
-We also have a [community forum](https://community.homey.app) for general discussions.
-
+The following is a set of guidelines for contributing to projects hosted at [kengu](https://github.com/kengu) on GitHub. 
+These are just guidelines, not rules. Use your best judgment, and feel free to contact us if you have any questions.
 
 ## Before submitting a bug or feature request
 
@@ -16,7 +13,8 @@ We also have a [community forum](https://community.homey.app) for general discus
 * Have you checked that it's not a problem with one of the apps you're using, rather than Homey itself?
 * Have you looked at what's involved in fixing/implementing this?
  
-Capable programmers should always attempt to investigate and fix problems themselves before asking for others to help. Submit a pull request instead of an issue!
+Capable programmers should always attempt to investigate and fix problems themselves before asking for others to help. 
+Submit a pull request instead of an issue!
 
 ## A great bug report contains
 
@@ -43,7 +41,8 @@ Capable programmers should always attempt to investigate and fix problems themse
 * Relevant documentation.
 
 ## Speeding up your pull request
-Merging pull requests takes time. While we always try to merge your pull request as soon as possible, there are certain things you can do to speed up this process.
+Merging pull requests takes time. While we always try to merge your pull request as soon as possible, 
+there are certain things you can do to speed up this process.
 
 * Ask developers to review your code changes and post their feedback.
 * Ask users to test your changes and post their feedback.
