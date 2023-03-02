@@ -1,0 +1,64 @@
+{
+  "name": {
+    "en": "Energy Controllers",
+    "no": "Energikontroller"
+  },
+  "class": "other",
+  "capabilities": [
+    "meter_power",
+    "measure_power"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [],
+  "icon": "/icon.svg",
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "loading",
+      "template": "loading"
+    },
+    {
+      "id": "login_credentials",
+      "template": "login_credentials",
+      "options": {
+        "logo": "{{driverAssetsPath}}/logo.png",
+        "title": {
+          "en": "Log in with your credentials",
+          "no": "Logg inn med din konto"
+        },
+        "usernameLabel": {
+          "en": "E-mail address",
+          "no": "Epostadresse"
+        },
+        "usernamePlaceholder": {
+          "en": "john@doe.com",
+          "no": "ola@nordmann.no"
+        },
+        "passwordLabel": {
+          "en": "Password",
+          "no": "Passord"
+        },
+        "passwordPlaceholder": {
+          "en": "Enter password",
+          "no": "Oppgi passord"
+        }
+      }
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": { "next": "add_devices" }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices",
+      "navigation": { "back": "list_devices" }
+    }
+  ]
+}

@@ -1,0 +1,597 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "no.kengu.sikom-living",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#1b9bb2",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Sikom Living"
+  },
+  "description": {
+    "en": "Take control of heat, temperature and power consumption in a simple way"
+  },
+  "category": [
+    "energy"
+  ],
+  "tags": {
+    "en": [
+      "sikom",
+      "smart",
+      "home",
+      "house"
+    ],
+    "no": [
+      "sikom",
+      "smart",
+      "hjem",
+      "hus"
+    ]
+  },
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Kenneth Gulbrandsøy",
+    "email": "kenneth@discoos.org"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Central Control Unit",
+        "no": "Sentralenhet"
+      },
+      "class": "other",
+      "capabilities": [
+        "alarm_generic"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "icon": "/icon.svg",
+      "images": {
+        "small": "/drivers/central-control-unit/assets/images/small.png",
+        "large": "/drivers/central-control-unit/assets/images/large.png",
+        "xlarge": "/drivers/central-control-unit/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "loading",
+          "template": "loading"
+        },
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "/drivers/central-control-unit/assets/logo.png",
+            "title": {
+              "en": "Log in with your credentials",
+              "no": "Logg inn med din konto"
+            },
+            "usernameLabel": {
+              "en": "E-mail address",
+              "no": "Epostadresse"
+            },
+            "usernamePlaceholder": {
+              "en": "john@doe.com",
+              "no": "ola@nordmann.no"
+            },
+            "passwordLabel": {
+              "en": "Password",
+              "no": "Passord"
+            },
+            "passwordPlaceholder": {
+              "en": "Enter password",
+              "no": "Oppgi passord"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices",
+          "navigation": {
+            "back": "list_devices"
+          }
+        }
+      ],
+      "id": "central-control-unit"
+    },
+    {
+      "name": {
+        "en": "Easee Home"
+      },
+      "class": "other",
+      "capabilities": [
+        "measure_current",
+        "meter_power",
+        "lock_mode",
+        "measure_power",
+        "onoff"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "icon": "/icon.svg",
+      "images": {
+        "small": "/drivers/easee-home/assets/images/small.png",
+        "large": "/drivers/easee-home/assets/images/large.png",
+        "xlarge": "/drivers/easee-home/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "loading",
+          "template": "loading"
+        },
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "/drivers/easee-home/assets/logo.png",
+            "title": {
+              "en": "Log in with your credentials",
+              "no": "Logg inn med din konto"
+            },
+            "usernameLabel": {
+              "en": "E-mail address",
+              "no": "Epostadresse"
+            },
+            "usernamePlaceholder": {
+              "en": "john@doe.com",
+              "no": "ola@nordmann.no"
+            },
+            "passwordLabel": {
+              "en": "Password",
+              "no": "Passord"
+            },
+            "passwordPlaceholder": {
+              "en": "Enter password",
+              "no": "Oppgi passord"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices",
+          "navigation": {
+            "back": "list_devices"
+          }
+        }
+      ],
+      "id": "easee-home"
+    },
+    {
+      "name": {
+        "en": "Energy Controllers",
+        "no": "Energikontroller"
+      },
+      "class": "other",
+      "capabilities": [
+        "meter_power",
+        "measure_power"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "icon": "/icon.svg",
+      "images": {
+        "small": "/drivers/energy-controller/assets/images/small.png",
+        "large": "/drivers/energy-controller/assets/images/large.png",
+        "xlarge": "/drivers/energy-controller/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "loading",
+          "template": "loading"
+        },
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "/drivers/energy-controller/assets/logo.png",
+            "title": {
+              "en": "Log in with your credentials",
+              "no": "Logg inn med din konto"
+            },
+            "usernameLabel": {
+              "en": "E-mail address",
+              "no": "Epostadresse"
+            },
+            "usernamePlaceholder": {
+              "en": "john@doe.com",
+              "no": "ola@nordmann.no"
+            },
+            "passwordLabel": {
+              "en": "Password",
+              "no": "Passord"
+            },
+            "passwordPlaceholder": {
+              "en": "Enter password",
+              "no": "Oppgi passord"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices",
+          "navigation": {
+            "back": "list_devices"
+          }
+        }
+      ],
+      "id": "energy-controller"
+    },
+    {
+      "name": {
+        "en": "Group",
+        "no": "Gruppe"
+      },
+      "class": "other",
+      "capabilities": [
+        "button",
+        "alarm_generic",
+        "onoff"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "icon": "/icon.svg",
+      "images": {
+        "small": "/drivers/group/assets/images/small.png",
+        "large": "/drivers/group/assets/images/large.png",
+        "xlarge": "/drivers/group/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "loading",
+          "template": "loading"
+        },
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "/drivers/group/assets/logo.png",
+            "title": {
+              "en": "Log in with your credentials",
+              "no": "Logg inn med din konto"
+            },
+            "usernameLabel": {
+              "en": "E-mail address",
+              "no": "Epostadresse"
+            },
+            "usernamePlaceholder": {
+              "en": "john@doe.com",
+              "no": "ola@nordmann.no"
+            },
+            "passwordLabel": {
+              "en": "Password",
+              "no": "Passord"
+            },
+            "passwordPlaceholder": {
+              "en": "Enter password",
+              "no": "Oppgi passord"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices",
+          "navigation": {
+            "back": "list_devices"
+          }
+        }
+      ],
+      "id": "group"
+    },
+    {
+      "name": {
+        "en": "Relay",
+        "no": "Relé"
+      },
+      "class": "other",
+      "capabilities": [],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "icon": "/icon.svg",
+      "images": {
+        "small": "/drivers/relay/assets/images/small.png",
+        "large": "/drivers/relay/assets/images/large.png",
+        "xlarge": "/drivers/relay/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "loading",
+          "template": "loading"
+        },
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "/drivers/relay/assets/logo.png",
+            "title": {
+              "en": "Log in with your credentials",
+              "no": "Logg inn med din konto"
+            },
+            "usernameLabel": {
+              "en": "E-mail address",
+              "no": "Epostadresse"
+            },
+            "usernamePlaceholder": {
+              "en": "john@doe.com",
+              "no": "ola@nordmann.no"
+            },
+            "passwordLabel": {
+              "en": "Password",
+              "no": "Passord"
+            },
+            "passwordPlaceholder": {
+              "en": "Enter password",
+              "no": "Oppgi passord"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices",
+          "navigation": {
+            "back": "list_devices"
+          }
+        }
+      ],
+      "id": "relay"
+    },
+    {
+      "name": {
+        "en": "Smoke Detector",
+        "no": "Røykvarsler"
+      },
+      "class": "sensor",
+      "capabilities": [],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "icon": "/icon.svg",
+      "images": {
+        "small": "/drivers/smoke-detector/assets/images/small.png",
+        "large": "/drivers/smoke-detector/assets/images/large.png",
+        "xlarge": "/drivers/smoke-detector/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "loading",
+          "template": "loading"
+        },
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "/drivers/smoke-detector/assets/logo.png",
+            "title": {
+              "en": "Log in with your credentials",
+              "no": "Logg inn med din konto"
+            },
+            "usernameLabel": {
+              "en": "E-mail address",
+              "no": "Epostadresse"
+            },
+            "usernamePlaceholder": {
+              "en": "john@doe.com",
+              "no": "ola@nordmann.no"
+            },
+            "passwordLabel": {
+              "en": "Password",
+              "no": "Passord"
+            },
+            "passwordPlaceholder": {
+              "en": "Enter password",
+              "no": "Oppgi passord"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices",
+          "navigation": {
+            "back": "list_devices"
+          }
+        }
+      ],
+      "id": "smoke-detector"
+    },
+    {
+      "name": {
+        "en": "Switch and Clock",
+        "no": "Bryter og ur"
+      },
+      "class": "button",
+      "capabilities": [
+        "button"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "icon": "/icon.svg",
+      "images": {
+        "small": "/drivers/switch/assets/images/small.png",
+        "large": "/drivers/switch/assets/images/large.png",
+        "xlarge": "/drivers/switch/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "loading",
+          "template": "loading"
+        },
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "/drivers/switch/assets/logo.png",
+            "title": {
+              "en": "Log in with your credentials",
+              "no": "Logg inn med din konto"
+            },
+            "usernameLabel": {
+              "en": "E-mail address",
+              "no": "Epostadresse"
+            },
+            "usernamePlaceholder": {
+              "en": "john@doe.com",
+              "no": "ola@nordmann.no"
+            },
+            "passwordLabel": {
+              "en": "Password",
+              "no": "Passord"
+            },
+            "passwordPlaceholder": {
+              "en": "Enter password",
+              "no": "Oppgi passord"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices",
+          "navigation": {
+            "back": "list_devices"
+          }
+        }
+      ],
+      "id": "switch"
+    },
+    {
+      "name": {
+        "en": "Thermostat",
+        "no": "Termostat"
+      },
+      "class": "thermostat",
+      "capabilities": [
+        "meter_power",
+        "alarm_heat",
+        "measure_power",
+        "target_temperature",
+        "measure_temperature",
+        "thermostat_mode"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [],
+      "icon": "/icon.svg",
+      "images": {
+        "small": "/drivers/thermostat/assets/images/small.png",
+        "large": "/drivers/thermostat/assets/images/large.png",
+        "xlarge": "/drivers/thermostat/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "loading",
+          "template": "loading"
+        },
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "/drivers/thermostat/assets/logo.png",
+            "title": {
+              "en": "Log in with your credentials",
+              "no": "Logg inn med din konto"
+            },
+            "usernameLabel": {
+              "en": "E-mail address",
+              "no": "Epostadresse"
+            },
+            "usernamePlaceholder": {
+              "en": "john@doe.com",
+              "no": "ola@nordmann.no"
+            },
+            "passwordLabel": {
+              "en": "Password",
+              "no": "Passord"
+            },
+            "passwordPlaceholder": {
+              "en": "Enter password",
+              "no": "Oppgi passord"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices",
+          "navigation": {
+            "back": "list_devices"
+          }
+        }
+      ],
+      "id": "thermostat"
+    }
+  ]
+}
